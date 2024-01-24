@@ -412,10 +412,6 @@ ul.row {
   background: transparent;
 }
 
-.header-logo {
-  position: var(--header-logo-position);
-}
-
 /* Footer
                 ============================= */
 
