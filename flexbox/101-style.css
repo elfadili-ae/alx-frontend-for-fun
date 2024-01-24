@@ -1,0 +1,147 @@
+:root {
+  /* colors */
+  --bx1: #ff5733;
+  --bx2: #8a2be2;
+  --bx3: #00bfff;
+  --bx4: #ff6347;
+  --bx5: #ffd700;
+  /* sizes */
+  --bxWidth: 4;
+  --bxHeight: 2.5;
+  --font-big: 4.5rem;
+}
+
+.container {
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-1rem);
+}
+
+.box1,
+.box5 {
+  font-size: calc(var(--font-big) * 0.25);
+  width: calc(var(--font-big) * 0.25 * var(--bxWidth));
+  height: calc(var(--font-big) * 0.25 * var(--bxHeight));
+}
+
+.box2,
+.box4 {
+  font-size: calc(var(--font-big) * 0.5);
+  width: calc(var(--font-big) * 0.5 * var(--bxWidth));
+  height: calc(var(--font-big) * 0.5 * var(--bxHeight));
+}
+
+.box3 {
+  font-size: calc(var(--font-big) * 1);
+  width: calc(var(--font-big) * var(--bxWidth));
+  height: calc(var(--font-big) * var(--bxHeight));
+}
+
+@keyframes discoAnimation1 {
+  0%,
+  100% {
+    background-color: var(--bx1);
+  }
+  25% {
+    background-color: var(--bx2);
+  }
+  50% {
+    background-color: var(--bx3);
+  }
+  75% {
+    background-color: var(--bx4);
+  }
+}
+
+@keyframes discoAnimation2 {
+  0%,
+  100% {
+    background-color: var(--bx2);
+  }
+  25% {
+    background-color: var(--bx3);
+  }
+  50% {
+    background-color: var(--bx4);
+  }
+  75% {
+    background-color: var(--bx5);
+  }
+}
+
+@keyframes discoAnimation3 {
+  0%,
+  100% {
+    background-color: var(--bx3);
+  }
+  25% {
+    background-color: var(--bx4);
+  }
+  50% {
+    background-color: var(--bx5);
+  }
+  75% {
+    background-color: var(--bx1);
+  }
+}
+
+@keyframes discoAnimation4 {
+  0%,
+  100% {
+    background-color: var(--bx4);
+  }
+  25% {
+    background-color: var(--bx5);
+  }
+  50% {
+    background-color: var(--bx1);
+  }
+  75% {
+    background-color: var(--bx2);
+  }
+}
+
+@keyframes discoAnimation5 {
+  0%,
+  100% {
+    background-color: var(--bx5);
+  }
+  25% {
+    background-color: var(--bx1);
+  }
+  50% {
+    background-color: var(--bx2);
+  }
+  75% {
+    background-color: var(--bx3);
+  }
+}
+
+.box1 {
+  animation: discoAnimation1 4s infinite;
+}
+
+.box2 {
+  animation: discoAnimation2 4s infinite;
+}
+
+.box3 {
+  animation: discoAnimation3 4s infinite;
+}
+
+.box4 {
+  animation: discoAnimation4 4s infinite;
+}
+
+.box5 {
+  animation: discoAnimation5 4s infinite;
+}
