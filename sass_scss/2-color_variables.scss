@@ -1,0 +1,17 @@
+/* Color variable */
+
+$col:#3D3D3D;
+$bgCol: #6D6D6D;
+
+body {
+    color: $col;
+    background-color: $bgCol;
+}
+
+p {
+    color: $col;
+}
+
+h2 {
+    background-color: $bgCol;
+}
