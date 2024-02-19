@@ -1,0 +1,12 @@
+/*Maring mixin*/
+@mixin marg($val) {
+  margin-left: $val;
+  margin-right: $val;
+}
+body {
+  @include marg(10px);
+}
+
+div {
+  @include marg(15px);
+}
