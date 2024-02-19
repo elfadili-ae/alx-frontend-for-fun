@@ -1,0 +1,7 @@
+/*Loop headers */
+
+@for $header from 1 through 5 {
+  h#{$header} {
+    font-size: #{$header}px;
+  }
+}
